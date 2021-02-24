@@ -58,7 +58,7 @@ namespace HealthCheck
 
             app.UseRouting();
 
-            app.UseHealthChecks("/hc");
+            app.UseHealthChecks("/hc", new CustomHealthCheckOptions());
 
             app.UseEndpoints(endpoints =>
             {
